@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+#define Md_Mehedi_Hasan ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+using namespace std;
+
+int main()
+{
+    Md_Mehedi_Hasan;
+
+    string s; getline(cin, s);
+    set<char> st;
+    for(char c : s)
+        if(c != ' ' && c != '{' && c != '}' && c != ',')
+            st.insert(c);
+    cout << st.size();
+    return 0;
+}
+
+// https://codeforces.com/problemset/problem/443/A
